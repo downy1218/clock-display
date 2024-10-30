@@ -32,6 +32,8 @@ body{
     box-shadow: 
     -5px -5px 15px rgb(255, 255, 255), 
     5px 5px 15px grey;
+    display: flex;
+    align-items: center;
 }
 .dateBox{
     width: 310px;
@@ -39,7 +41,86 @@ body{
     background-color: rgb(195, 195, 195);
     border-radius: 30px;
     box-shadow: 
-    -5px -5px 15px rgb(255, 255, 255), /* -px 부분이 왼쪽과 위쪽*/
+    -5px -5px 15px rgb(255, 255, 255),
     5px 5px 15px grey;
     margin-top: 10px;
+    
+}
+.dateBox p{
+    margin-left: 15px;
+}
+#currentDate{
+    font-weight: bold;
+    margin-bottom: 0;
+}
+#currentTime{
+    margin-top: 3px;
+}
+
+#greyBox{
+    background-color: rgb(142, 142, 142);
+    width: 290px;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    margin-left: 10px;
+}
+#music{
+    padding-top: 10px;
+}
+
+.upload{
+    width: 200px;
+    height: 60px;
+    box-shadow: inset 5px 5px 10px grey;
+    border-radius: 30px;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.upload p{
+    margin-left: 70px;
+    color: rgb(125, 125, 125);
+}
+.plus{
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 100%;
+    background-color: rgb(142, 142, 142);
+    position: relative;
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.plus p{
+    color: aqua;
+}
+
+
+.middleContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.clock{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    box-shadow: inset 5px 5px 10px grey;
+    background-color: rgba(255, 255, 255, 0.868);
+    margin-top: 250px;
+}
+
+
+
+
+
+
+#img{
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
 }
