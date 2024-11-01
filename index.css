@@ -44,6 +44,8 @@ body{
     -5px -5px 15px rgb(255, 255, 255),
     5px 5px 15px grey;
     margin-top: 10px;
+    position: relative;
+
     
 }
 .dateBox p{
@@ -58,7 +60,7 @@ body{
 }
 
 #greyBox{
-    background-color: rgb(142, 142, 142);
+    background-color: rgb(167, 167, 167);
     width: 290px;
     height: 50px;
     border: none;
@@ -88,7 +90,7 @@ body{
     height: 45px;
     border: none;
     border-radius: 100%;
-    background-color: rgb(142, 142, 142);
+    background-color: rgb(167, 167, 167);
     position: relative;
     margin-left: 50px;
     display: flex;
@@ -102,16 +104,20 @@ body{
 
 .middleContainer{
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
+    margin-top: 0;
+    gap: 30px;
+    position: absolute;
+    margin-top: 50px;
 }
 
 .clock{
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
     border-radius: 100%;
     box-shadow: inset 5px 5px 10px grey;
     background-color: rgba(255, 255, 255, 0.868);
-    margin-top: 250px;
+    /* margin-top: 250px; */
 }
 
 
@@ -121,6 +127,7 @@ body{
 
 #img{
     width: 70px;
-    height: 70px;
+    height: 90px;
     border-radius: 10px;
+    object-fit: cover;
 }
