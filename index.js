@@ -19,8 +19,13 @@ if (a.length==1){
 
 
 if (hour < 12){
-    document.querySelector('#currentTime').innerHTML=hour+'AM';
+    document.querySelector('#currentTime').innerHTML=hour+' AM';
 }
 else{
-    document.querySelector('#currentTime').innerHTML=(hour-12)+'PM';
+    document.querySelector('#currentTime').innerHTML=(hour-12)+' PM';
 };
+
+document.querySelector('#playBtn').addEventListener('click',function(){
+    window.open('https://youtu.be/ZXu0VnLvHBQ?si=9z4ADaMzVKhXW7QB')
+})
+

@@ -57,6 +57,7 @@ body{
 }
 #currentTime{
     margin-top: 3px;
+    margin-bottom: 0;
 }
 
 #greyBox{
@@ -69,6 +70,7 @@ body{
 }
 #music{
     padding-top: 10px;
+    margin-top: 8px;
 }
 
 .upload{
@@ -104,7 +106,6 @@ body{
 
 .middleContainer{
     display: flex;
-    /* flex-direction: column; */
     margin-top: 0;
     gap: 30px;
     position: absolute;
@@ -117,17 +118,17 @@ body{
     border-radius: 100%;
     box-shadow: inset 5px 5px 10px grey;
     background-color: rgba(255, 255, 255, 0.868);
-    /* margin-top: 250px; */
 }
-
-
-
-
-
 
 #img{
     width: 70px;
     height: 90px;
     border-radius: 10px;
     object-fit: cover;
+}
+.imgContainer{
+    margin-top: 15px;
+}
+#playBtn{
+    cursor: pointer;
 }
