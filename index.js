@@ -2,8 +2,10 @@ const today = new Date();
 const month = today.getMonth()+1;
 const day = today.getDate();
 const hour = today.getHours();
+const minute = today.getMinutes();
+const sec = today.getSeconds() + today.getMilliseconds()/1000;
 const a = []; //day 길이 배열
-// const hours = document.querySelector('#currentTime').innerHTML=hour;
+
 console.log(today)
 console.log(month)
 console.log(day)
@@ -27,5 +29,21 @@ else{
 
 document.querySelector('#playBtn').addEventListener('click',function(){
     window.open('https://youtu.be/ZXu0VnLvHBQ?si=9z4ADaMzVKhXW7QB')
-})
+});
 
+
+
+function Clock(){
+    const hourDegree = ((hour/12)*360) + (minute/60)*30 + 90;
+    const minDegree = ((minute/60)*360) + (sec/60)*6 + 90;
+    const secDegree = ((sec/60)*360) +90;
+
+    document.querySelector('#hour').style.transform = `rotate(${hourDegree}deg)`
+    document.querySelector('#minute').style.transform = `rotate(${minDegree}deg)`
+    document.querySelector('#sec').style.transform = `rotate(${secDegree}deg)`
+
+    requestAnimationFrame(Clock);
+}
+
+Clock();
+setInterval(Clock,1000)

@@ -111,14 +111,6 @@ body{
     margin-top: 50px;
 }
 
-.clock{
-    width: 180px;
-    height: 180px;
-    border-radius: 100%;
-    box-shadow: inset 5px 5px 10px grey;
-    background-color: rgba(255, 255, 255, 0.868);
-    position: relative;
-}
 
 #img{
     width: 70px;
@@ -132,13 +124,25 @@ body{
 #playBtn{
     cursor: pointer;
 }
-.chim img{
-    width: 3px;
-}
+
 
 .chim{
     position: absolute;
     bottom: 50%;
     left: 50%;
-    transform-origin: 50% 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    transform-origin: bottom center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.clock{
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+    box-shadow: inset 5px 5px 10px grey;
+    background-color: rgba(255, 255, 255, 0.868);
+    position: relative;
+    transform: rotate(-90deg);
 }
