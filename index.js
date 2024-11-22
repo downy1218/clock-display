@@ -1,21 +1,27 @@
 const today = new Date();
 const month = today.getMonth()+1;
-const day = today.getDate();
+let day = today.getDate();
 const hour = today.getHours();
 const minute = today.getMinutes();
 const sec = today.getSeconds() + today.getMilliseconds()/1000;
-const a = []; //day 길이 배열
+
 
 console.log(today)
 console.log(month)
 console.log(day)
-
+day = String(day) 
 document.querySelector('#currentMonth').innerHTML=month;
 document.querySelector('#currentDay').innerHTML=day;
 document.querySelector('#currentTime').innerHTML=hour;
 
-a.push(day)
-if (a.length==1){
+
+console.log('day:',day);
+newDay = [...day]
+console.log('spread',newDay)
+
+
+
+if (a.length===1){
     document.querySelector('#currentDay').innerHTML='0'+day;
 };
 
