@@ -5,7 +5,7 @@ const hour = today.getHours();
 const minute = today.getMinutes();
 const sec = today.getSeconds() + today.getMilliseconds()/1000;
 
-
+console.log(hour,minute)
 console.log(today)
 console.log(month)
 console.log(day)
@@ -40,6 +40,7 @@ document.querySelector('#playBtn').addEventListener('click',function(){
 
 
 function Clock(){
+    //각도계산 수정필요
     const hourDegree = ((hour/12)*360) + (minute/60)*30 + 90;
     const minDegree = ((minute/60)*360) + (sec/60)*6 + 90;
     const secDegree = ((sec/60)*360) +90;
@@ -48,8 +49,8 @@ function Clock(){
     document.querySelector('#minute').style.transform = `rotate(${minDegree}deg)`
     document.querySelector('#sec').style.transform = `rotate(${secDegree}deg)`
 
-    requestAnimationFrame(Clock);
 }
 
 Clock();
-setInterval(Clock,1000)
+// window.location.reload();
+// setInterval(Clock,1000)

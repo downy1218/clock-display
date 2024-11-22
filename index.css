@@ -128,20 +128,15 @@ body{
 
 
 .chim{
-    position: absolute;
+    /* position: absolute;
     bottom: 50%;
-    left: 50%;
+    left: 50%; */
     transform: translate(-50%,-50%);
     display: flex;
     transform-origin: bottom center;
     flex-direction: column;
     align-items: center;
 }
-
-    
-
-
-
 
 
 
@@ -153,14 +148,6 @@ body{
     background-color: rgba(255, 255, 255, 0.868);
     position: relative;
     
-}
-.clock:hover{
-    transform: scale(1.2);
-    transition: transform 0.5s ease;
-}
-
-.timeCheck{
-    color:  rgb(125, 125, 125);
 }
 #twelve{
     position: absolute;
@@ -182,4 +169,35 @@ body{
     position: absolute;
     top:70px;
     left: 10px;
+}
+
+#midSpot{
+    position:relative;
+    font-size: 50px;
+    margin-top:130px;
+    margin-left:180px;
+}
+#hour{
+    position: absolute;
+    top:0px;
+    left:190px;
+}
+#minute{
+    position: absolute;
+    top:0px;
+    left:190px;
+}
+#sec{
+    position: absolute;
+    top:0px;
+    left:190px;
+}
+
+.clock:hover{
+    transform: scale(1.2);
+    transition: transform 0.5s ease;
+}
+
+.timeCheck{
+    color:  rgb(125, 125, 125);
 }
