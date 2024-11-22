@@ -21,7 +21,7 @@ console.log('spread',newDay)
 
 
 
-if (a.length===1){
+if (newDay.length===1){
     document.querySelector('#currentDay').innerHTML='0'+day;
 };
 
